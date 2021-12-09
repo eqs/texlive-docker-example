@@ -2,7 +2,7 @@ version: '3'
 services:
   tex:
     image: texlive/texlive
-    command: ["latexmk", "-r", "config/latexmkrc", "-c", "main.tex"]
+    command: ["latexmk", "-r", "config/latexmkrc", "-pvc", "main.tex"]
     working_dir: /code
     volumes:
       - .:/code
