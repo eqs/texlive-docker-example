@@ -1,0 +1,38 @@
+\documentclass{beamer}
+
+\usepackage{amsmath, amssymb}
+%\usepackage[utf8]{inputenc}
+\usepackage{zxjatype}
+%\usepackage[ipa]{zxjafont}
+
+\usefonttheme{professionalfonts}
+\setbeamertemplate{navigation symbols}{}
+
+% --- page number ---
+\setbeamertemplate{footline}{%
+	\raisebox{10pt}{\makebox[\paperwidth]{\hfill\makebox[7em]{\normalsize\texttt{\insertframenumber/\inserttotalframenumber}}}}%
+}
+
+% Presenter's note
+%\setbeameroption{show notes on second screen}
+
+\title{Beamer Example}
+\author{John Doe}
+\date{\today}
+
+\begin{document}
+
+    \begin{frame}[plain]
+        \maketitle
+    \end{frame}
+
+    \begin{frame}{Example Slide}
+        \begin{itemize}
+            \item example text
+        \end{itemize}
+        \note{
+            Please write presenter's note here.
+            発表者ノートはここに書く．
+        }
+    \end{frame}
+\end{document}
